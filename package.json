@@ -1,0 +1,35 @@
+{
+  "name": "playwright-ts-framework",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript test automation framework: Page Object Model UI tests and API tests in one suite",
+  "scripts": {
+    "test": "playwright test --project=chromium --project=api",
+    "test:ui": "playwright test --project=chromium",
+    "test:api": "playwright test --project=api",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:all-browsers": "playwright test --project=chromium --project=firefox --project=webkit",
+    "test:examples": "playwright test --project=examples",
+    "test:headed": "playwright test --project=chromium --headed",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "dotenv": "^18.0.9",
+    "eslint": "^10.13.0",
+    "eslint-plugin-playwright": "^2.12.1",
+    "prettier": "^3.9.10",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}

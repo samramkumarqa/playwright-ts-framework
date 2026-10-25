@@ -1,0 +1,6 @@
+export { BasePage } from './BasePage';
+export { LoginPage } from './LoginPage';
+export { InventoryPage, type SortOption } from './InventoryPage';
+export { CartPage } from './CartPage';
+export { CheckoutPage, type ShippingInfo } from './CheckoutPage';
+export { HeaderComponent } from './components/HeaderComponent';
